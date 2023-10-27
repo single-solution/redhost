@@ -1,0 +1,12 @@
+.hm7-domain-section {
+	background-color: #fff;
+}
+
+.form-check-input:checked {
+	background-color: red;
+	border-color: red;
+}
+.form-check-input:focus {
+	border-color: red;
+	box-shadow: none;
+}
