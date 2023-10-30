@@ -1,8 +1,4 @@
-// import Image from "next/image";
-import Image from "next/image";
-import React from "react";
-
-const About = () => {
+export default function About() {
 	return (
 		<>
 			<section class="breadcrumb-area bg-primary-gradient">
@@ -45,33 +41,29 @@ const About = () => {
 						</div>
 						<div class="col-lg-5 order-1 order-lg-2" data-aos="fade-left">
 							<div class="h5-about-right">
-								<Image width={800} src="assets/img/home5/building.png" alt="not found" class="img-fluid" />
+								<img src="assets/img/home5/building.png" alt="not found" class="img-fluid" />
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="h5-application pt-120 pb-40 position-relative zindex-1  overflow-hidden ">
-				<Image
-					width={800}
+				<img
 					src="assets/img/shapes/home5-curve-reverse.png"
 					alt="not found"
 					class="position-absolute  start-0 top-0 w-100 zindex-1 logo-black"
 				/>
-				<Image
-					width={800}
+				<img
 					src="assets/img/shapes/home5-curve-reverse-black.png"
 					alt="not found"
 					class="position-absolute start-0 top-0 w-100 zindex-1 logo-white"
 				/>
-				<Image
-					width={800}
+				<img
 					src="assets/img/shapes/home5-curve-bottom.png"
 					alt="not found"
 					class="position-absolute start-0 bottom-0 w-100 zindex-1 logo-black"
 				/>
-				<Image
-					width={800}
+				<img
 					src="assets/img/shapes/home5-curve-bottom-black.png"
 					alt="not found"
 					class="position-absolute start-0 bottom-0 w-100 zindex-1 logo-white"
@@ -167,13 +159,13 @@ const About = () => {
 					<div class="row  align-items-center">
 						<div class="col-xl-6 col-lg-6" data-aos="fade-right">
 							<div class="img-wrapper">
-								<Image width={800} src="assets/img/icons/bg-main.svg" alt="not found" class="img-fluid" />
+								<img src="assets/img/icons/bg-main.svg" alt="not found" class="img-fluid" />
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6" data-aos="fade-left">
 							<div class="hm1-about-content">
 								<div style={{ maxWidth: "100%" }} class="hm10-about-card d-flex align-items-center gap-4 p-4">
-									<Image width={800} src="assets/img/icons/magnify.svg" alt="magnify" class="img-fluid" />
+									<img src="assets/img/icons/magnify.svg" alt="magnify" class="img-fluid" />
 									<div>
 										<h5 class="mb-2">Our Values</h5>
 										<p class="mb-0">
@@ -183,7 +175,7 @@ const About = () => {
 									</div>
 								</div>
 								<div style={{ maxWidth: "100%" }} class="hm10-about-card d-flex align-items-center gap-4 p-4 mt-30">
-									<Image width={800} src="assets/img/icons/gear.svg" alt="magnify" class="img-fluid" />
+									<img src="assets/img/icons/gear.svg" alt="magnify" class="img-fluid" />
 									<div>
 										<h5 class="mb-2">Our Vision</h5>
 										<p class="mb-0">
@@ -193,7 +185,7 @@ const About = () => {
 									</div>
 								</div>
 								<div style={{ maxWidth: "100%" }} class="hm10-about-card d-flex align-items-center gap-4 p-4 mt-30">
-									<Image width={800} src="assets/img/icons/panel.svg" alt="magnify" class="img-fluid" />
+									<img src="assets/img/icons/panel.svg" alt="magnify" class="img-fluid" />
 									<div>
 										<h5 class="mb-2">Mission</h5>
 										<p class="mb-0">
@@ -211,8 +203,7 @@ const About = () => {
 
 			<section class="hm2-feedback pt-120 pb-120 overflow-hidden" style={{ backgroundColor: "#fff" }}>
 				<div class="container position-relative zindex-1">
-					<Image
-						width={800}
+					<img
 						src="assets/img/shapes/feedback-circle.svg"
 						alt="circle"
 						class="position-absolute feedback-circle d-none d-md-block"
@@ -418,6 +409,4 @@ const About = () => {
 			</section>
 		</>
 	);
-};
-
-export default About;
+}

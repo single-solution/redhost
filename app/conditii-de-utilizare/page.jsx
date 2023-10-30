@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-const UsageConditions = () => {
+export default function ConditiiDeUtilizare() {
 	return (
 		<>
 			<section class="breadcrumb-area bg-primary-gradient">
@@ -468,6 +468,4 @@ const UsageConditions = () => {
 			</section>
 		</>
 	);
-};
-
-export default CconditiiDeUtilizare;
+}

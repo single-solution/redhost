@@ -36,7 +36,7 @@ const Checkout = () => {
 									<div className="row g-4">
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="customer-type">Customer type</label>
+												<label htmlFor="customer-type">Customer type</label>
 
 												<select
 													id="customer-type"
@@ -67,7 +67,7 @@ const Checkout = () => {
 										</div>
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="name">Nume Firma/Institutie</label>
+												<label htmlFor="name">Nume Firma/Institutie</label>
 												<input
 													type="text"
 													className=""
@@ -80,7 +80,7 @@ const Checkout = () => {
 										</div>
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="natural-person">Nume persoana fizica (sau reprezentant)</label>
+												<label htmlFor="natural-person">Nume persoana fizica (sau reprezentant)</label>
 												<input
 													type="text"
 													className=""
@@ -93,7 +93,7 @@ const Checkout = () => {
 										</div>
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="email">Adresa email</label>
+												<label htmlFor="email">Adresa email</label>
 												<input
 													type="email"
 													className=""
@@ -106,7 +106,7 @@ const Checkout = () => {
 										</div>
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="phone">Telefon</label>
+												<label htmlFor="phone">Telefon</label>
 												<input
 													type="phone"
 													className=""
@@ -119,7 +119,7 @@ const Checkout = () => {
 										</div>
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="mob">Mobil</label>
+												<label htmlFor="mob">Mobil</label>
 												<input
 													type="phone"
 													className=""
@@ -132,7 +132,7 @@ const Checkout = () => {
 										</div>
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="address">Adresa</label>
+												<label htmlFor="address">Adresa</label>
 												<input
 													type="text"
 													className=""
@@ -145,7 +145,7 @@ const Checkout = () => {
 										</div>
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="post">Cod postal</label>
+												<label htmlFor="post">Cod postal</label>
 												<input
 													type="text"
 													className=""
@@ -158,7 +158,7 @@ const Checkout = () => {
 										</div>
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="location">Localitate</label>
+												<label htmlFor="location">Localitate</label>
 												<input
 													type="text"
 													className=""
@@ -171,14 +171,14 @@ const Checkout = () => {
 										</div>
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="judet">Judet</label>
+												<label htmlFor="judet">Judet</label>
 												<input type="text" className="" name="judet" id="judet" placeholder="judet" />
 											</div>
 										</div>
 
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="fiscal">Cod fiscal / CNP</label>
+												<label htmlFor="fiscal">Cod fiscal / CNP</label>
 												<input
 													type="text"
 													className=""
@@ -191,7 +191,7 @@ const Checkout = () => {
 										</div>
 										<div className="col-md-6">
 											<div className="input-field">
-												<label for="inreg">Nr. Inreg. la Registrul Comertului</label>
+												<label htmlFor="inreg">Nr. Inreg. la Registrul Comertului</label>
 												<input
 													type="text"
 													className=""
@@ -214,7 +214,7 @@ const Checkout = () => {
 								</div>
 								<div className="col-md-6 mt-4">
 									<div className="input-field">
-										<label for="customer-type">alegeti ceea ce se potriveste mai bine</label>
+										<label htmlFor="customer-type">alegeti ceea ce se potriveste mai bine</label>
 
 										<select
 											id="customer-type"
@@ -304,7 +304,7 @@ const Checkout = () => {
 								<div className="col-12">
 									<div className="form-check">
 										<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-										<label className="form-check-label" for="flexCheckDefault">
+										<label className="form-check-label" htmlFor="flexCheckDefault">
 											Va rugam sa bifati daca sunteti de acord sa va transmitem din cand in cand comunicari comerciale
 											cum ar fi <strong>ocazii speciale si promotii.</strong>
 											Nu aveti obligatia de a bifa acest camp si puteti retrage oricand acest acord.

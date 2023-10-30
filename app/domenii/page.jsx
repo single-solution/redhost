@@ -1,48 +1,47 @@
-import Image from "next/image";
+import React from "react";
 
-const Areas = () => {
+export default function page() {
 	return (
 		<>
-			<section class="breadcrumb-area bg-primary-gradient">
-				<div class="container">
-					<div class="breadcrumb-content text-center">
-						<h2 class="mb-3">Domenii</h2>
+			<section className="breadcrumb-area bg-primary-gradient">
+				<div className="container">
+					<div className="breadcrumb-content text-center">
+						<h2 className="mb-3">Domenii</h2>
 						<nav>
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item">
+							<ol className="breadcrumb">
+								<li className="breadcrumb-item">
 									<a href="index.php">Home</a>
 								</li>
-								<li class="breadcrumb-item active">Domenii</li>
+								<li className="breadcrumb-item active">Domenii</li>
 							</ol>
 						</nav>
 					</div>
 				</div>
 			</section>
-
-			<section class="dm-about-section ptb-120 position-relative zindex-1 overflow-hidden">
-				<Image width={800} src="assets/img/shapes/dm-about-bg.png" alt="shape" class="position-absolute right-bottom" />
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-6">
-							<div class="section-title text-center">
+			<section className="dm-about-section ptb-120 position-relative zindex-1 overflow-hidden">
+				<img src="assets/img/shapes/dm-about-bg.png" alt="shape" className="position-absolute right-bottom" />
+				<div className="container">
+					<div className="row justify-content-center">
+						<div className="col-lg-6">
+							<div className="section-title text-center">
 								<h2>Inregistrare Domenii</h2>
 							</div>
 						</div>
 					</div>
-					<div class="row mt-5 align-items-center justify-content-between">
-						<div class="col-lg-6" data-aos="fade-right">
-							<div class="dm-about-img">
-								<Image width={800} src="assets/img/about.jpg.svg" alt="man" class="img-fluid" />
+					<div className="row mt-5 align-items-center justify-content-between">
+						<div className="col-lg-6" data-aos="fade-right">
+							<div className="dm-about-img">
+								<img src="assets/img/about.jpg.svg" alt="man" className="img-fluid" />
 							</div>
 						</div>
-						<div class="col-lg-6" data-aos="fade-left">
-							<div class="dm-about-content mt-40 mt-lg-0">
-								<h3 class="mb-4">Domenii gratuite via RedHost</h3>
+						<div className="col-lg-6" data-aos="fade-left">
+							<div className="dm-about-content mt-40 mt-lg-0">
+								<h3 className="mb-4">Domenii gratuite via RedHost</h3>
 								<p>
 									Inregistrarea gratuita de domeniu este un beneficiu pe care-l primiti in mod automat cu pachetele de
 									gazduire RedHost platite pe 12 luni. Este insa important sa plasati comanda pentru un domeniu liber.
 								</p>
-								<ul class=" mb-2 feature-list">
+								<ul className=" mb-2 feature-list">
 									<li>
 										<b>1.</b> La Start va oferim gratuit la alegere pe numele dvs un domeniu .ro sau .eu in primul an.
 									</li>
@@ -55,10 +54,10 @@ const Areas = () => {
 										(inclusiv .info la Pro), pe numele dvs pe perioada intregii colaborari.
 									</li>
 								</ul>
-								<p class="mb-2">
+								<p className="mb-2">
 									Toate aceste pachete sunt prezentate in detaliu in pagina de <a href="index.php">gazduire web</a>
 								</p>
-								<p class="mb-0">
+								<p className="mb-0">
 									<b>
 										TOATE INREGISTRARILE DE DOMENII CUMPARATE DE LA FIRMA NOASTRA SE FAC DIRECT PE NUMELE CLIENTULUI.
 										DOMENIILE POT FI TRANSFERATE ORICAND PE ORICE ALT SERVER DE GAZDUIRE.
@@ -69,55 +68,53 @@ const Areas = () => {
 					</div>
 				</div>
 			</section>
-
-			<section class="cd-plan-table ds-bg pb-120 pt-120">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-7">
-							<div class="cd-title text-center" data-aos="fade-right">
-								<h2 class="mb-3">Preturi inregistrare domenii</h2>
-								<p class="mb-0">Preturi valabile incepand cu 14.02.2023</p>
+			<section className="cd-plan-table ds-bg pb-120 pt-120">
+				<div className="container">
+					<div className="row justify-content-center">
+						<div className="col-lg-7">
+							<div className="cd-title text-center" data-aos="fade-right">
+								<h2 className="mb-3">Preturi inregistrare domenii</h2>
+								<p className="mb-0">Preturi valabile incepand cu 14.02.2023</p>
 							</div>
 						</div>
 					</div>
-
-					<div class="col-sm-12 my-4   p-4 bg-white box-shadow-border " id="show_table" data-aos="fade-up">
+					<div className="col-sm-12 my-4   p-4 bg-white box-shadow-border " id="show_table" data-aos="fade-up">
 						<table
 							id="fixed-header"
-							class="table m-0 rs-head-table  dt-responsive nowrap  align-middle dataTable no-footer dtr-inline"
-							style="width: 100%;"
+							className="table m-0 rs-head-table  dt-responsive nowrap  align-middle dataTable no-footer dtr-inline"
+							style={{ width: "100%" }}
 							aria-describedby="fixed-header_info">
 							<thead>
-								<tr style="background-color:whitesmoke ;">
-									<th class="border-radius-top-bottom-start">Extensie</th>
+								<tr style={{ backgroundColor: "whitesmoke" }}>
+									<th className="border-radius-top-bottom-start">Extensie</th>
 									<th>
-										<span class="plan-title">
-											Pret domeniu <span style="color: red;">achizitionat cu gazduire 12 luni*</span>
+										<span className="plan-title">
+											Pret domeniu <span style={{ color: "red" }}>achizitionat cu gazduire 12 luni*</span>
 										</span>
 									</th>
 									<th>
-										<span class="plan-title">
-											Pret domeniu <span style="color: red;">achizitionat cu gazduire</span>
-											<span style="color: red;">&lt; 12 luni**</span>
+										<span className="plan-title">
+											Pret domeniu <span style={{ color: "red" }}>achizitionat cu gazduire</span>
+											<span style={{ color: "red" }}>&lt; 12 luni**</span>
 										</span>
 									</th>
 									<th>
-										<span class="plan-title">
-											Pret domeniu <span style="color: red;">fara gazduire ***</span>
+										<span className="plan-title">
+											Pret domeniu <span style={{ color: "red" }}>fara gazduire ***</span>
 										</span>
 									</th>
 									<th>
-										<span class="plan-title">Perioada valabilitate</span>
+										<span className="plan-title">Perioada valabilitate</span>
 									</th>
-									<th class="border-radius-top-bottom-end">
-										<span class="plan-title">Scoatere din carantina**</span>
+									<th className="border-radius-top-bottom-end">
+										<span className="plan-title">Scoatere din carantina**</span>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Comanda domeniu .RO</td>
-									<td style="min-width: 300px;">
+									<td style={{ minWidth: 300 }}>
 										<strong>
 											GRATIS: cu gazduire Balance+
 											<br />
@@ -126,10 +123,10 @@ const Areas = () => {
 											6.99€/an: cu gazduire Promo <br />
 										</strong>
 									</td>
-									<td style="min-width: 280px;">
+									<td style={{ minWidth: 280 }}>
 										<strong>6.99€/an</strong>
 									</td>
-									<td style="min-width: 180px;">
+									<td style={{ minWidth: 180 }}>
 										{" "}
 										<strong>8.49€/an</strong>
 									</td>
@@ -255,18 +252,17 @@ const Areas = () => {
 					</div>
 				</div>
 			</section>
-
-			<section class="dm-support bg-primary-gradient">
-				<div class="container">
-					<div class="row justify-content-between">
-						<div class="col-xl-12 col-lg-12 align-self-center">
-							<div class="dm-support-left">
-								<h2 class="mb-30">
+			<section className="dm-support bg-primary-gradient">
+				<div className="container">
+					<div className="row justify-content-between">
+						<div className="col-xl-12 col-lg-12 align-self-center">
+							<div className="dm-support-left">
+								<h2 className="mb-30">
 									Need Some Help?
 									<br />
 									Call our Award-Winning Support Team.
 								</h2>
-								<p class="mb-30" style="text-align: center;    font-size: 20px;" data-aos="fade-up">
+								<p className="mb-30" style={{ textAlign: "center", fontSize: 20 }} data-aos="fade-up">
 									Toate notatiile cu semnul "+" de mai sus semnifica faptul ca beneficiul este disponibil pentru acel
 									pachet si toate pachetele superioare.
 									<br />
@@ -279,12 +275,14 @@ const Areas = () => {
 									<br />
 									*** Preturi pentru domenii achizitionate fara gazduire RedHost pe aceeasi factura.
 								</p>
-								<div class="dm-support-info">
-									<a href="tel:+88987456456" class="me-4">
-										<i class="fa-solid fa-square-phone"></i>+88 0145 789 456
+								<div className="dm-support-info">
+									<a href="tel:+88987456456" className="me-4">
+										<i className="fa-solid fa-square-phone" />
+										+88 0145 789 456
 									</a>
 									<a href="mailto:someone@mail.com">
-										<i class="fa-brands fa-rocketchat"></i>Chat Now.
+										<i className="fa-brands fa-rocketchat" />
+										Chat Now.
 									</a>
 								</div>
 							</div>
@@ -292,29 +290,28 @@ const Areas = () => {
 					</div>
 				</div>
 			</section>
-
-			<section class="dm-faq-section ptb-120 position-relative zindex-1" style="background-color: #fff;">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-7">
-							<div class="section-title text-center" data-aos="fade-down">
+			<section className="dm-faq-section ptb-120 position-relative zindex-1" style={{ backgroundColor: "#fff" }}>
+				<div className="container">
+					<div className="row justify-content-center">
+						<div className="col-lg-7">
+							<div className="section-title text-center" data-aos="fade-down">
 								<h2>Precizari importante</h2>
 							</div>
 						</div>
 					</div>
-					<div class="row mt-5">
-						<div class="col-lg-12">
-							<div class="dm-faq-left">
-								<div class="accordion dm-accordion" id="dm_accordion">
-									<div class="accordion-item" data-aos="fade-down">
-										<div class="accordion-header">
+					<div className="row mt-5">
+						<div className="col-lg-12">
+							<div className="dm-faq-left">
+								<div className="accordion dm-accordion" id="dm_accordion">
+									<div className="accordion-item" data-aos="fade-down">
+										<div className="accordion-header">
 											<a href="#dm_item_one" data-bs-toggle="collapse">
 												Introducere taxa anuala de mentenanta pentru toate domeniile .ro
 											</a>
 										</div>
-										<div class="accordion-collapse" id="dm_item_one" data-bs-parent="#dm_accordion">
-											<div class="accordion-body">
-												<p class="mb-0">
+										<div className="accordion-collapse" id="dm_item_one" data-bs-parent="#dm_accordion">
+											<div className="accordion-body">
+												<p className="mb-0">
 													Domeniile .ro sunt administrate prin lege* de catre{" "}
 													<b>Institutul Național de Cercetare Dezvoltare în Informatica (ICI-Bucuresti)</b>. Pe
 													parcursul anului 2017, <b>Ministerul Comunicatiilor si Societatii Informationale (MCSI)</b>{" "}
@@ -357,15 +354,15 @@ const Areas = () => {
 											</div>
 										</div>
 									</div>
-									<div class="accordion-item" data-aos="fade-down">
-										<div class="accordion-header">
+									<div className="accordion-item" data-aos="fade-down">
+										<div className="accordion-header">
 											<a href="#dm_item_seven" data-bs-toggle="collapse">
 												Atat registrul (autoritatea care reglementeaza un anumit tip de domeniu)
 											</a>
 										</div>
-										<div class="accordion-collapse collapse " id="dm_item_seven" data-bs-parent="#dm_accordion">
-											<div class="accordion-body">
-												<p class="mb-0">
+										<div className="accordion-collapse collapse " id="dm_item_seven" data-bs-parent="#dm_accordion">
+											<div className="accordion-body">
+												<p className="mb-0">
 													Atat registrul (autoritatea care reglementeaza un anumit tip de domeniu) cat si registrarul
 													(entitatea care administreaza procesul de inregistrare) pot solicita de la titularul
 													domeniului documente care sa probeze faptul ca titularul are dreptul sa inregistreze un
@@ -382,15 +379,15 @@ const Areas = () => {
 											</div>
 										</div>
 									</div>
-									<div class="accordion-item" data-aos="fade-down">
-										<div class="accordion-header">
+									<div className="accordion-item" data-aos="fade-down">
+										<div className="accordion-header">
 											<a href="#dm_item_two" data-bs-toggle="collapse">
 												Pentru obtinerea unui domeniu
 											</a>
 										</div>
-										<div class="accordion-collapse collapse " id="dm_item_two" data-bs-parent="#dm_accordion">
-											<div class="accordion-body">
-												<p class="mb-0">
+										<div className="accordion-collapse collapse " id="dm_item_two" data-bs-parent="#dm_accordion">
+											<div className="accordion-body">
+												<p className="mb-0">
 													Pentru obtinerea unui domeniu nu este suficient sa efectuati plata. O serie de extensii (de
 													exemplu .com si .net) necesita validarea adresei de mail apartinand titularului. Daca
 													procedura de validare (veti primi un mail de la registrar cu un link de validare - este
@@ -401,15 +398,15 @@ const Areas = () => {
 											</div>
 										</div>
 									</div>
-									<div class="accordion-item" data-aos="fade-down">
-										<div class="accordion-header">
+									<div className="accordion-item" data-aos="fade-down">
+										<div className="accordion-header">
 											<a href="#dm_item_three" data-bs-toggle="collapse">
 												Pentru transferul unui domeniu
 											</a>
 										</div>
-										<div class="accordion-collapse collapse " id="dm_item_three" data-bs-parent="#dm_accordion">
-											<div class="accordion-body">
-												<p class="mb-0">
+										<div className="accordion-collapse collapse " id="dm_item_three" data-bs-parent="#dm_accordion">
+											<div className="accordion-body">
+												<p className="mb-0">
 													Pentru transferul unui domeniu .ro pe alt titular (operatiune cunoscuta sub numele de
 													trade) se percepe o taxa de 10.99 Euro + TVA si aceasta include un an de valabilitate.
 													Conform regulilor ROTLD, Procedura de transfer va reseta valabilitatea domeniului de la
@@ -420,16 +417,16 @@ const Areas = () => {
 											</div>
 										</div>
 									</div>
-									<div class="accordion-item " data-aos="fade-down">
-										<div class="accordion-header accordion-d-none-icon">
+									<div className="accordion-item " data-aos="fade-down">
+										<div className="accordion-header accordion-d-none-icon">
 											<a href="#dm_item_four">
 												In cazul in care plata domeniului se face dupa expirare dar inainte de intrarea in carantina,
 												vom percepe o taxa de 10 Euro + TVA / domeniu.
 											</a>
 										</div>
 									</div>
-									<div class="accordion-item " data-aos="fade-down">
-										<div class="accordion-header accordion-d-none-icon">
+									<div className="accordion-item " data-aos="fade-down">
+										<div className="accordion-header accordion-d-none-icon">
 											<a href="#dm_item_four">
 												In cazul in care plata domeniului se face dupa intrarea in carantina (domeniile .eu intra in
 												carantina imediat dupa expirare), se va percepe taxa de scoatere din carantina din tabelul de
@@ -437,8 +434,8 @@ const Areas = () => {
 											</a>
 										</div>
 									</div>
-									<div class="accordion-item " data-aos="fade-down">
-										<div class="accordion-header accordion-d-none-icon">
+									<div className="accordion-item " data-aos="fade-down">
+										<div className="accordion-header accordion-d-none-icon">
 											<a href="#dm_item_four">
 												Notiunea de rezervari domenii este identica cu notiunea de inregistrare. Nu se poate face o
 												rezervare de domeniu in sensul obisnuit al cuvantului. Rezervarea domeniilor se face exclusiv
@@ -446,24 +443,24 @@ const Areas = () => {
 											</a>
 										</div>
 									</div>
-									<div class="accordion-item " data-aos="fade-down">
-										<div class="accordion-header accordion-d-none-icon">
+									<div className="accordion-item " data-aos="fade-down">
+										<div className="accordion-header accordion-d-none-icon">
 											<a href="#dm_item_four">
 												Pentru mentinerea domeniilor dupa perioada initiala, clientul trebuie sa comande si sa
 												plateasca o noua perioada inainte de expirarea perioadei curente.
 											</a>
 										</div>
 									</div>
-									<div class="accordion-item " data-aos="fade-down">
-										<div class="accordion-header accordion-d-none-icon">
+									<div className="accordion-item " data-aos="fade-down">
+										<div className="accordion-header accordion-d-none-icon">
 											<a href="#dm_item_four">
 												Se ofera un singur domeniu gratuit pentru fiecare cont de gazduire (conform ofertei de
 												gazduire web).
 											</a>
 										</div>
 									</div>
-									<div class="accordion-item " data-aos="fade-down">
-										<div class="accordion-header accordion-d-none-icon">
+									<div className="accordion-item " data-aos="fade-down">
+										<div className="accordion-header accordion-d-none-icon">
 											<a href="#dm_item_four">Preturile specificate pe site-ul www.redhost.ro nu includ TVA.</a>
 										</div>
 									</div>
@@ -475,6 +472,4 @@ const Areas = () => {
 			</section>
 		</>
 	);
-};
-
-export default Areas;
+}

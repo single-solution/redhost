@@ -1,28 +1,29 @@
-const PersonalDates = () => {
+export default function DatePersonale() {
 	return (
 		<>
-			<section class="breadcrumb-area bg-primary-gradient">
-				<div class="container">
-					<div class="breadcrumb-content text-center">
-						<h2 class="mb-3">Date personale </h2>
+			&lt;&gt;
+			<section className="breadcrumb-area bg-primary-gradient">
+				<div className="container">
+					<div className="breadcrumb-content text-center">
+						<h2 className="mb-3">Date personale </h2>
 						<nav>
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item">
+							<ol className="breadcrumb">
+								<li className="breadcrumb-item">
 									<a href="index.php">Home</a>
 								</li>
-								<li class="breadcrumb-item active">Date personale </li>
+								<li className="breadcrumb-item active">Date personale</li>
 							</ol>
 						</nav>
 					</div>
 				</div>
 			</section>
-			<section class="ptb-120" style="background-color: #fff;">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-md-10">
-							<div class="content">
-								<h3 class="my-3">Politica de procesare date cu caracter personal Euroweb Srl</h3>
-								<h4 class="my-3">Cine suntem</h4>
+			<section className="ptb-120" style={{ backgroundColor: "#fff" }}>
+				<div className="container">
+					<div className="row justify-content-center">
+						<div className="col-md-10">
+							<div className="content">
+								<h3 className="my-3">Politica de procesare date cu caracter personal Euroweb Srl</h3>
+								<h4 className="my-3">Cine suntem</h4>
 								SC EUROWEB SRL
 								<br />
 								Cod fiscal: RO22621599
@@ -41,10 +42,10 @@ const PersonalDates = () => {
 								<br />
 								Mobil: 0748/030656
 								<br />
-								<h4 class="my-3">Cadru legal</h4>
+								<h4 className="my-3">Cadru legal</h4>
 								Politica de confidentialitate Euroweb Srl reflecta prevederile legale in vigoare. Persoanele fizice ale
 								caror date personale sunt prelucrate de catre noi au urmatoarele drepturi:
-								<ul class="lista">
+								<ul className="lista">
 									<li>
 										dreptul de a fi informate cu privire la identitatea operatorului, in ce scop se prelucreaza datele,
 										cui le-ar putea dezvalui, obligatia furnizarii datelor;
@@ -64,9 +65,9 @@ const PersonalDates = () => {
 									</li>
 									<li>dreptul de a se adresa justitiei</li>
 								</ul>
-								<h4 class="my-3">Date solicitate</h4>
+								<h4 className="my-3">Date solicitate</h4>
 								SC EUROWEB SRL solicita clientilor (deci persoanelor care comanda) urmatoarele date cu caracter personal:
-								<ul class="lista">
+								<ul className="lista">
 									<li>Nume</li>
 									<li>Prenume</li>
 									<li>Email</li>
@@ -78,9 +79,9 @@ const PersonalDates = () => {
 								colectarea CNP-ului de faptul ca registrul de domenii .ro (ICI-ROTLD) solicita in aceste cazuri CNP-ul
 								titularului. Ca atare, temeiul legal pentru colectare este reprezentat de "indeplinirea contractului".
 								<br />
-								<h4 class="my-3">Utilizarea datelor solicitate</h4>
+								<h4 className="my-3">Utilizarea datelor solicitate</h4>
 								Datele colectate vor fi utilizate exclusiv in urmatoarele scopuri:
-								<ul class="lista">
+								<ul className="lista">
 									<li>intocmirea contractelor de prestari servicii</li>
 									<li>intocmirea facturilor fiscale si a proformelor</li>
 									<li>
@@ -94,8 +95,8 @@ const PersonalDates = () => {
 								</ul>
 								Datele colectate nu vor fi cedate, vandute sau incredintate vreo unei terte parti decat acolo unde acest
 								lucru este impus de realizarea contractului sau sunt legate de existenta unei obligatii legale.
-								<h4 class="my-3">Cui sunt transmise si cine intra in contact cu datele cu caracter personal</h4>
-								<ul class="lista">
+								<h4 className="my-3">Cui sunt transmise si cine intra in contact cu datele cu caracter personal</h4>
+								<ul className="lista">
 									<li>
 										Agentiei Nationale de Administrare Fiscala prin declaratia 394 (nume, prenume, adresa). Temeiul
 										legal pentru procesare: obligatie legala.
@@ -115,10 +116,10 @@ const PersonalDates = () => {
 										Temei legal: indeplinirea contractului.
 									</li>
 								</ul>
-								<h4 class="my-3">Perioada pentru care sunt pastrate datele cu caracter personal</h4>
+								<h4 className="my-3">Perioada pentru care sunt pastrate datele cu caracter personal</h4>
 								Avand in vedere ca scopul principal pentru care sunt colectate datele este reprezentat de procesul de
 								facturare, datele vor fi pastrate pentru perioada minima prevazuta de legea fiscala.
-								<h4 class="my-3">Controlul accesului si securitate</h4>
+								<h4 className="my-3">Controlul accesului si securitate</h4>
 								Din motive de securitate, datele clientilor nu pot fi accesate direct decat de catre reprezentantii
 								EUROWEB SRL. La cerere, clientii pot fi informati cu privire la, respectiv pot solicita actualizarea
 								datelor cu caracter personal in mod gratuit.
@@ -138,6 +139,4 @@ const PersonalDates = () => {
 			</section>
 		</>
 	);
-};
-
-export default PersonalDates;
+}
