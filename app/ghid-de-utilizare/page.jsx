@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function GhidDeUtilizare() {
 	return (
 		<>
@@ -57,7 +58,7 @@ export default function GhidDeUtilizare() {
 									receive from us the necessary authentication information (login and password) together with the server
 									IP.
 								</p>
-								<ul style="list-style: disc; margin-left: 20px;">
+								<ul style={{ listStyle: "disc", marginLeft: "20px" }}>
 									<li>Pentru conturi cu domenii incluse nu aveti nameservere de modificat.</li>
 									<li>Pentru domenii fara gazduire trebuie sa ne dati nameserverele serverului dvs.</li>
 									<li>Pentru domenii transferate la noi va vom oferi noi nameserverele necesare.</li>
@@ -160,7 +161,7 @@ export default function GhidDeUtilizare() {
 											Vi se va deschide o pagina web similara cu cea de mai jos. Trebuie sa va decideti asupra unei
 											parole.
 										</p>
-										<ul style="list-style-type: disc; padding-bottom: 20px;">
+										<ul style={{ listStyleType: "disc", paddingBottom: "20px" }}>
 											<li>parola trebuie sa contina minim 6 caractere (preferabil mai multe)</li>
 											<li>
 												trebuie sa includa neaparat litere mari, litere mici, cifre si un caracter special (precum @,
@@ -403,7 +404,7 @@ export default function GhidDeUtilizare() {
 							<p>
 								Dupa logarea in cPanel, in partea stanga veti vedea un tabel in care veti regasi urmatoarele informatii:
 							</p>
-							<ul class="ms-4 my-3" style="list-style-type: disc;">
+							<ul class="ms-4 my-3" style={{ listStyleType: "disc" }}>
 								<li>pachetul de gazduire</li>
 								<li>IP-ul pe care sunteti gazduit</li>
 								<li>numarul de subdomenii utilizate / permise</li>
@@ -442,14 +443,14 @@ export default function GhidDeUtilizare() {
 									Pentru incarcarea site-ului pe serverul nostru puteti folosi orice client FTP impreuna cu urmatoarele
 									date:
 								</p>
-								<ul style="list-style: disc; margin-left: 20px;">
+								<ul style={{ listStyle: "disc", marginLeft: "20px" }}>
 									<li>
 										adresa FTP este ftp.DomeniulDvs.tld (inlocuiti DomeniulDvs.tld cu domeniul dvs) sau IP-ul (doar in
 										primele 24 de ore)
 									</li>
 									<li>acelasi login si password ca cel de la contul de administrare (cPanel).</li>
 								</ul>
-								<ul style="list-style: disc; margin-left: 20px; margin:50px 0px">
+								<ul style={{ listStyle: "disc", marginLeft: "20px", margin: "50px 0px" }}>
 									<li class="text-danger">
 										din cauza evolutiilor relativ recente (furtul parolelor FTP prin sniffing si/sau virusi de tip
 										trojan) singurul mod recomandat de incarcare a site-ului este cel securizat SFTP; in acest sens

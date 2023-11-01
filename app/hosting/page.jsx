@@ -19,7 +19,7 @@ export default function Hosting() {
 				</div>
 			</section>
 
-			<section class=" mt-0   pb-40 pt-60 position-relative zindex-1 overflow-hidden" style="background:#fff">
+			<section class=" mt-0   pb-40 pt-60 position-relative zindex-1 overflow-hidden" style={{ background: "#fff" }}>
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-lg-8">
@@ -42,7 +42,7 @@ export default function Hosting() {
 												1.75€<span>/luna</span>
 											</h4>
 											<p class="mt-4 fw-bold ">Price/month:</p>
-											<ul class="feature-list my-4" style="height:auto">
+											<ul class="feature-list my-4" style={{ height: "auto" }}>
 												<li>
 													<span class="me-2">
 														<i class="fa-solid fa-check"></i>
@@ -59,7 +59,7 @@ export default function Hosting() {
 											</ul>
 										</div>
 										<div class="col-md-6">
-											<ul class="feature-list my-4" style="height:auto">
+											<ul class="feature-list my-4" style={{ height: "auto" }}>
 												<li class="d-flex">
 													<span class="me-2">
 														<i class="fa-solid fa-rocket"></i>
@@ -100,7 +100,7 @@ export default function Hosting() {
 										</div>
 									</div>
 
-									<p style="font-weight:700;">
+									<p style={{ fontWeight: "700" }}>
 										Payment periods for the hosting package : 12 months (20% discount compared to shorter periods) or 6
 										months
 									</p>
@@ -145,7 +145,7 @@ export default function Hosting() {
 					</div>
 				</div>
 			</section>
-			<section class="hm-contact-area position-relative pb-4 overflow-hidden bg-white zindex-1" style="background:#fff">
+			<section class="hm-contact-area position-relative pb-4 overflow-hidden bg-white zindex-1" style={{ background: "#fff" }}>
 				<div class="container">
 					<div class="hm-contact-form mt-5" id="contact">
 						<div class="col-12 pb-3 message-box d-none">

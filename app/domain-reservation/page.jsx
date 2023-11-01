@@ -1,13 +1,15 @@
-export default function DomainReservation() {
-	document.getElementById("showButton").addEventListener("click", function () {
-		var hiddenContent = document.getElementById("hiddenContent");
-		var hiddenText = document.getElementById("hiddenText");
+/* eslint-disable react/no-unescaped-entities */
 
-		if (hiddenContent.style.display === "none") {
-			hiddenContent.style.display = "block";
-			hiddenText.style.display = "none";
-		}
-	});
+export default function DomainReservation() {
+	// document.getElementById("showButton").addEventListener("click", function () {
+	// 	var hiddenContent = document.getElementById("hiddenContent");
+	// 	var hiddenText = document.getElementById("hiddenText");
+
+	// 	if (hiddenContent.style.display === "none") {
+	// 		hiddenContent.style.display = "block";
+	// 		hiddenText.style.display = "none";
+	// 	}
+	// });
 
 	return (
 		<>
