@@ -25,7 +25,7 @@ export default function GhidDeUtilizare() {
 								<h5 class="hm7-subtitle fw-semibold mb-2">
 									<span class="me-1">
 										<svg width="40" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M62 6H8" stroke="#E71F31" stroke-width="2"></path>
+											<path d="M62 6H8" stroke="#E71F31" strokeWidth="2"></path>
 											<path d="M7.86805e-07 6L9 0.803849L9 11.1962L7.86805e-07 6Z" fill="#E71F31"></path>
 										</svg>
 									</span>
@@ -46,7 +46,7 @@ export default function GhidDeUtilizare() {
 								<h5 class="hm7-subtitle fw-semibold mb-2">
 									<span class="me-1">
 										<svg width="40" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M62 6H8" stroke="#E71F31" stroke-width="2"></path>
+											<path d="M62 6H8" stroke="#E71F31" strokeWidth="2"></path>
 											<path d="M7.86805e-07 6L9 0.803849L9 11.1962L7.86805e-07 6Z" fill="#E71F31"></path>
 										</svg>
 									</span>
@@ -299,7 +299,7 @@ export default function GhidDeUtilizare() {
 								<h5 class="hm7-subtitle fw-semibold mb-2">
 									<span class="me-1">
 										<svg width="40" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M62 6H8" stroke="#E71F31" stroke-width="2"></path>
+											<path d="M62 6H8" stroke="#E71F31" strokeWidth="2"></path>
 											<path d="M7.86805e-07 6L9 0.803849L9 11.1962L7.86805e-07 6Z" fill="#E71F31"></path>
 										</svg>
 									</span>
@@ -432,7 +432,7 @@ export default function GhidDeUtilizare() {
 								<h5 class="hm7-subtitle fw-semibold mb-2">
 									<span class="me-1">
 										<svg width="40" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M62 6H8" stroke="#E71F31" stroke-width="2"></path>
+											<path d="M62 6H8" stroke="#E71F31" strokeWidth="2"></path>
 											<path d="M7.86805e-07 6L9 0.803849L9 11.1962L7.86805e-07 6Z" fill="#E71F31"></path>
 										</svg>
 									</span>
@@ -597,7 +597,7 @@ export default function GhidDeUtilizare() {
 								<h5 class="hm7-subtitle fw-semibold mb-2">
 									<span class="me-1">
 										<svg width="40" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M62 6H8" stroke="#E71F31" stroke-width="2"></path>
+											<path d="M62 6H8" stroke="#E71F31" strokeWidth="2"></path>
 											<path d="M7.86805e-07 6L9 0.803849L9 11.1962L7.86805e-07 6Z" fill="#E71F31"></path>
 										</svg>
 									</span>

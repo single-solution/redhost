@@ -1889,7 +1889,8 @@ export default function GazduireWebSSD() {
 											</div>
 											<button
 												className="template-btn primary-btn border-0 mt-3 text-center"
-												onclick="toggleDisplay();">
+												// onClick="toggleDisplay();"
+											>
 												Read More
 											</button>
 										</div>

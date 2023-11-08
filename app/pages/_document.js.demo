@@ -1,0 +1,36 @@
+import Document, { Html, Head, Main, NextScript } from "next/document";
+
+class MyDocument extends Document {
+	render() {
+		return (
+			<Html lang="en">
+				<Head>
+					{/* <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" async />
+					<script src="/assets/js/vendors/jquery.min.js" async />
+					<script src="/assets/js/vendors/popper.min.js" async />
+					<script src="/assets/js/vendors/bootstrap.min.js" async />
+					<script src="/assets/js/vendors/easing.min.js" async />
+					<script src="/assets/js/vendors/swiper.min.js" async />
+					<script src="/assets/js/vendors/masonry.min.js" async />
+					<script src="/assets/js/vendors/bootstrap-slider.min.js" async />
+					<script src="/assets/js/vendors/magnific-popup.min.js" async />
+					<script src="/assets/js/vendors/waypoints.min.js" async />
+					<script src="/assets/js/vendors/jquery.counterup.min.js" async />
+					<script src="/assets/js/vendors/isotope.pkgd.min.js" async />
+					<script src="/assets/js/vendors/countdown.min.js" async />
+					<script src="/assets/js/vendors/jquery.dataTables.min.js" async />
+					<script src="/assets/js/vendors/dataTables.bootstrap5.min.js" async />
+					<script src="/assets/js/vendors/dataTables.responsive.min.js" async />
+					<script src="/assets/js/vendors/dataTables.buttons.min.js" async />
+					<script src="/assets/js/app.js" async /> */}
+				</Head>
+				<body>
+					<Main />
+					<NextScript />
+				</body>
+			</Html>
+		);
+	}
+}
+
+export default MyDocument;

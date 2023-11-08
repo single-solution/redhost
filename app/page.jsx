@@ -1,5 +1,18 @@
+"use client";
+import { useEffect } from "react";
+
+import AOS from "aos";
+
 /* eslint-disable react/no-unescaped-entities */
 export default function Home() {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			<>
@@ -840,7 +853,7 @@ export default function Home() {
 									<p className="mt-3">
 										Focus on your business and avoid all the web hosting managed hosting guarantees unmatched
 										performance, reliability and choice with 24/7 support that acts as your extended team guarantees
-										unmatched performance.{" "}
+										unmatched performance.
 									</p>
 									<div className="hm2-service-tab hm2-tab-font-size mt-30 mb-40">
 										<ul className="nav nav-tabs de-margin" role="tablist">
@@ -863,7 +876,7 @@ export default function Home() {
 													aria-selected="false"
 													role="tab"
 													className=""
-													tabindex="-1">
+													tabIndex="-1">
 													Alegere domeniu
 												</button>
 											</li>
@@ -875,7 +888,7 @@ export default function Home() {
 													aria-selected="false"
 													role="tab"
 													className=""
-													tabindex="-1">
+													tabIndex="-1">
 													Cum comand?
 												</button>
 											</li>
@@ -887,7 +900,7 @@ export default function Home() {
 													aria-selected="false"
 													role="tab"
 													className=""
-													tabindex="-1">
+													tabIndex="-1">
 													Cum platesc?
 												</button>
 											</li>
@@ -899,7 +912,7 @@ export default function Home() {
 													aria-selected="false"
 													role="tab"
 													className=""
-													tabindex="-1">
+													tabIndex="-1">
 													Cat dureaza?
 												</button>
 											</li>
@@ -1207,7 +1220,7 @@ export default function Home() {
 									<h5 className="hm7-subtitle fw-semibold mb-2">
 										<span className="me-1">
 											<svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M62 6H8" stroke="#E71F31" stroke-width="2"></path>
+												<path d="M62 6H8" stroke="#E71F31" strokeWidth="2"></path>
 												<path d="M7.86805e-07 6L9 0.803849L9 11.1962L7.86805e-07 6Z" fill="#E71F31"></path>
 											</svg>
 										</span>
@@ -1925,7 +1938,8 @@ export default function Home() {
 												<button
 													className="template-btn primary-btn border-0 mt-3 text-center"
 													id="change_text"
-													onclick="toggleDisplay();">
+													// onClick={toggleDisplay()}
+												>
 													Read More
 												</button>
 											</div>
