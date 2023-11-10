@@ -8,8 +8,9 @@ import "assets/css/custom.css";
 import "assets/css/vebdor/dataTables.bootstrap5.min.css";
 import "assets/css/vebdor/responsive.bootstrap.min.css";
 import "assets/css/vebdor/buttons.dataTables.min.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+
+import Header from "./partials/Header";
+import Footer from "./partials/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
