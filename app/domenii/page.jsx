@@ -1,8 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
-import React from "react";
+export default function Domenii() {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
 
-export default function page() {
 	return (
 		<>
 			<section className="breadcrumb-area bg-primary-gradient">
@@ -80,7 +89,11 @@ export default function page() {
 							</div>
 						</div>
 					</div>
-					<div className="col-sm-12 my-4   p-4 bg-white box-shadow-border " id="show_table" data-aos="fade-up">
+					<div
+						className="col-sm-12 my-4 p-4 bg-white box-shadow-border"
+						style={{ overflowX: "scroll" }}
+						id="show_table"
+						data-aos="fade-up">
 						<table
 							id="fixed-header"
 							className="table m-0 rs-head-table  dt-responsive nowrap  align-middle dataTable no-footer dtr-inline"
