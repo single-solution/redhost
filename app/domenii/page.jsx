@@ -2,6 +2,7 @@
 "use client";
 import React, { useEffect } from "react";
 import AOS from "aos";
+import Link from "next/link";
 
 export default function Domenii() {
 	useEffect(() => {
@@ -21,7 +22,7 @@ export default function Domenii() {
 						<nav>
 							<ol className="breadcrumb">
 								<li className="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li className="breadcrumb-item active">Domenii</li>
 							</ol>
@@ -66,7 +67,7 @@ export default function Domenii() {
 									</li>
 								</ul>
 								<p className="mb-2">
-									Toate aceste pachete sunt prezentate in detaliu in pagina de <a href="index.php">gazduire web</a>
+									Toate aceste pachete sunt prezentate in detaliu in pagina de <Link href="/">gazduire web</Link>
 								</p>
 								<p className="mb-0">
 									<b>

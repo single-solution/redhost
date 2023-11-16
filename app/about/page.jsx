@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import Testimonials from "../partials/Testimonials";
 import AOS from "aos";
+import Link from "next/link";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
@@ -22,7 +23,7 @@ export default function About() {
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li class="breadcrumb-item active">About Us</li>
 							</ol>

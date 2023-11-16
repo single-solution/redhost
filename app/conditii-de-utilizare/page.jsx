@@ -1,5 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
+import Link from "next/link";
+
 export default function ConditiiDeUtilizare() {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			<section class="breadcrumb-area bg-primary-gradient">
@@ -9,7 +21,7 @@ export default function ConditiiDeUtilizare() {
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li class="breadcrumb-item active">Conditii de utilizare </li>
 							</ol>
@@ -219,7 +231,7 @@ export default function ConditiiDeUtilizare() {
 								</b>{" "}
 								(timp de disponibilitate). In cazul in care uptime-ul scade intr-o luna sub 99.90% clientului i se va
 								restitui la cerere un procent din suma platita pentru luna respectiva. Procentele si conditiile de
-								restituire sunt publicate in sectiunea de <a href="garantii-gazduire.php">garantii</a>. In nici un caz,
+								restituire sunt publicate in sectiunea de <Link href="/garantii-gazduire">garantii</Link>. In nici un caz,
 								suma restituita nu va fi mai mare decat cea platita pentru gazduire de catre client pentru contul
 								respectiv pe luna in curs.
 								<br />

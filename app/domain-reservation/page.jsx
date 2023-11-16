@@ -1,15 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
+import Link from "next/link";
 
 export default function DomainReservation() {
-	// document.getElementById("showButton").addEventListener("click", function () {
-	// 	var hiddenContent = document.getElementById("hiddenContent");
-	// 	var hiddenText = document.getElementById("hiddenText");
-
-	// 	if (hiddenContent.style.display === "none") {
-	// 		hiddenContent.style.display = "block";
-	// 		hiddenText.style.display = "none";
-	// 	}
-	// });
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
 
 	return (
 		<>
@@ -21,7 +22,7 @@ export default function DomainReservation() {
 						<nav>
 							<ol className="breadcrumb">
 								<li className="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li className="breadcrumb-item active">Domain Reservation</li>
 							</ol>
@@ -126,9 +127,9 @@ export default function DomainReservation() {
 											<span className="text-danger fw-bold ">LIBER</span>{" "}
 										</p>
 										<p className="mt-2">Puteti continua procedura de comanda.</p>
-										<a href="./order-hosting.php" className="primary-btn template-btn px-3 py-2">
+										<Link href="/order-hosting" className="primary-btn template-btn px-3 py-2">
 											Continuati cu Pasul 2 <i className="fa-solid fa-chevron-right ms-2" />
-										</a>
+										</Link>
 									</div>
 								</div>
 							</div>

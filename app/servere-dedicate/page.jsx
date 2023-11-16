@@ -1,7 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
+import Link from "next/link";
 import React from "react";
 
 export default function ServereDedicate() {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			&lt;&gt;
@@ -12,7 +23,7 @@ export default function ServereDedicate() {
 						<nav>
 							<ol className="breadcrumb">
 								<li className="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li className="breadcrumb-item active text-capitalize">servere-dedicate</li>
 							</ol>

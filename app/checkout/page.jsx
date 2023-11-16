@@ -1,5 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
+import Link from "next/link";
+
 const Checkout = () => {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			<section className="breadcrumb-area bg-primary-gradient">
@@ -9,7 +21,7 @@ const Checkout = () => {
 						<nav>
 							<ol className="breadcrumb">
 								<li className="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li className="breadcrumb-item active">Datele Dumneavoastra</li>
 							</ol>

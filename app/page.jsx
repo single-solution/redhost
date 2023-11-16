@@ -1,10 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { useEffect } from "react";
 import Testimonials from "./partials/Testimonials";
 import PricingPlans from "./partials/PricingPlans";
 import AOS from "aos";
+import Link from "next/link";
 
-/* eslint-disable react/no-unescaped-entities */
 export default function Home() {
 	useEffect(() => {
 		AOS.init({
@@ -33,9 +34,9 @@ export default function Home() {
 										RedHost exclusively offers SSD hosting (including NVMe) which offers a considerably increased speed
 										compared to hosting on servers with HDDs.{" "}
 									</p>
-									<a href="index.php" className="template-btn primary-btn">
+									<Link href="/" className="template-btn primary-btn">
 										Buy Now
-									</a>
+									</Link>
 								</div>
 							</div>
 							<div className="col-xl-6" data-aos-easing="ease-in-out" data-aos="fade-left">
@@ -271,7 +272,7 @@ export default function Home() {
 													</li>
 													<li>
 														Dupa afisarea proformei, efectuati plata prin una din{" "}
-														<a href="mod-plata.php">metodele de plata</a> specificate.
+														<Link href="/mod-plata">metodele de plata</Link> specificate.
 													</li>
 													<li>
 														La intrarea banilor in contul nostru vom inregistra domeniul si vom crea contul de
@@ -826,7 +827,7 @@ export default function Home() {
 											<div className="vps-ft-item-content mt-30">
 												<h5 className="fs-4 pb-20">Locatie servere </h5>
 												<p>
-													RedHost ofera <a href="gazduire-ro.php">gazduire RO </a> in GTS Telecom (DataCenter
+													RedHost ofera <Link href="/gazduire-web-sd">gazduire RO </Link> in GTS Telecom (DataCenter
 													profesional din Bucuresti).
 												</p>
 											</div>

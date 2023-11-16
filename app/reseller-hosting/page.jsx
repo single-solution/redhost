@@ -1,6 +1,18 @@
+/* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
+import Link from "next/link";
 import React from "react";
 
 export default function ResellerHosting() {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			&lt;&gt;
@@ -11,7 +23,7 @@ export default function ResellerHosting() {
 						<nav>
 							<ol className="breadcrumb">
 								<li className="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li className="breadcrumb-item active">Reseller Hosting</li>
 							</ol>
@@ -185,7 +197,7 @@ export default function ResellerHosting() {
 					</div>
 				</div>
 			</section>
-			<section className="dd-about-section   ptb-120 dd-section-bg" style={{ backgroundColor: "white !important" }}>
+			<section className="dd-about-section ptb-120 dd-section-bg" style={{ backgroundColor: "white !important" }}>
 				<div className="container">
 					<div className="row justify-content-center align-items-center">
 						<div className="col-xl-6 col-lg-6">
@@ -198,7 +210,7 @@ export default function ResellerHosting() {
 									cantitate rezonabila, nemonitorizata in mod implicit de catre noi. Cu toate acestea serviciul nu poate
 									fi de exemplu folosit pentru oferirea de servicii gratuite de hosting sau email si nici pentru a gazdui
 									site-uri prea mari pentru shared hosting (portaluri, bloguri foarte vizitate etc). In asemenea cazuri
-									aveti nevoie de <a href="./servere-dedicate.php">dedicated servers </a> .
+									aveti nevoie de <Link href="/servere-dedicate">dedicated servers </Link> .
 								</p>
 								<p>
 									{" "}

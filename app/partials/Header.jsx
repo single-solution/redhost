@@ -1,7 +1,18 @@
+/* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
 import Link from "next/link";
 import React from "react";
 
 const Header = () => {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			<div className="body-overlay"></div>
@@ -67,7 +78,7 @@ const Header = () => {
 							<div className="row align-items-center justify-content-between">
 								<div className="h4-header-content d-flex align-items-center justify-content-between">
 									<div className="logo-wrapper">
-										<Link href="index.php">
+										<Link href="/">
 											<img src="/assets/img/logo-white.png" alt="logo" className="logo" />
 										</Link>
 									</div>

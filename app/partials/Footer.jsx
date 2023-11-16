@@ -1,6 +1,18 @@
+/* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			<footer className="footer ">
@@ -18,9 +30,9 @@ const Footer = () => {
 						<div className="row">
 							<div className="col-lg-3 col-sm-6">
 								<div className="footer-widget footer-widget-1">
-									<a href="index.php" className="footer-logo">
+									<Link href="/" className="footer-logo">
 										<img src="/assets/img/logo-white.png" className="" style={{ maxWidth: "200px" }} alt="logo" />
-									</a>
+									</Link>
 									<div className="footer-social mt-5">
 										<ul className="social-nav mt-3">
 											<li>
@@ -46,22 +58,22 @@ const Footer = () => {
 									<h5 className=" position-relative mb-5 widget-title">Quick Links</h5>
 									<ul className="footer-nav">
 										<li>
-											<a href="index.php">Home</a>
+											<Link href="/">Home</Link>
 										</li>
 										<li>
-											<a href="about.php">About Us</a>
+											<Link href="/about">About Us</Link>
 										</li>
 										<li>
-											<a href="contact.php">Contact Us</a>
+											<Link href="/contact">Contact Us</Link>
 										</li>
 										<li>
-											<a href="./ghid-de-utilizare.php">Ghid de utilizare</a>
+											<Link href="/ghid-de-utilizare">Ghid de utilizare</Link>
 										</li>
 										<li>
-											<a href="./date-personale.php">Date Personale</a>
+											<Link href="/date-personale">Date Personale</Link>
 										</li>
 										<li>
-											<a href="./conditii-de-utilizare.php">Conditii de utilizare </a>
+											<Link href="/conditii-de-utilizare">Conditii de utilizare </Link>
 										</li>
 									</ul>
 								</div>
@@ -71,7 +83,7 @@ const Footer = () => {
 									<h5 className=" position-relative mb-5 widget-title">Servicii</h5>
 									<ul className="footer-nav">
 										<li className="d-flex">
-											<a href="gazduire-web-ssd.php">
+											<Link href="/gazduire-web-ssd">
 												<span className="pe-2">
 													<svg
 														style={{ width: "30px" }}
@@ -87,10 +99,10 @@ const Footer = () => {
 													</svg>
 												</span>
 												Gazduire Web SSD
-											</a>
+											</Link>
 										</li>
 										<li>
-											<a href="./domenii.php">
+											<Link href="/domenii">
 												<span className="pe-2">
 													<svg style={{ width: "30px" }} preserveAspectRatio="xMinYMin meet" viewBox="0 0 33.2 33.2">
 														<g data-name="Layer 2">
@@ -103,10 +115,10 @@ const Footer = () => {
 													</svg>
 												</span>
 												Domenii
-											</a>
+											</Link>
 										</li>
 										<li>
-											<a href="./reseller-hosting.php">
+											<Link href="/reseller-hosting">
 												<span className="pe-2">
 													<svg
 														style={{ width: "30px" }}
@@ -122,10 +134,10 @@ const Footer = () => {
 													</svg>
 												</span>
 												Reseller Hosting
-											</a>
+											</Link>
 										</li>
 										<li>
-											<a href="./vps.php">
+											<Link href="/hosting">
 												<span className="pe-2">
 													<svg style={{ width: "30px" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.7 32.11">
 														<g data-name="Layer 2">
@@ -144,10 +156,10 @@ const Footer = () => {
 													</svg>
 												</span>
 												Servere virtuale (VPS)
-											</a>
+											</Link>
 										</li>
 										<li>
-											<a href="./servere-dedicate.php">
+											<Link href="/servere-dedicate">
 												<span className="pe-2">
 													<svg style={{ width: "30px" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
 														<g data-name="Layer 2">
@@ -160,7 +172,7 @@ const Footer = () => {
 													</svg>
 												</span>
 												Servere Dedicate
-											</a>
+											</Link>
 										</li>
 									</ul>
 								</div>

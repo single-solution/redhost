@@ -1,5 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
+import Link from "next/link";
+
 export default function GhidDeUtilizare() {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			<section class="breadcrumb-area bg-primary-gradient">
@@ -9,7 +21,7 @@ export default function GhidDeUtilizare() {
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li class="breadcrumb-item active"> Ghid de utilizare</li>
 							</ol>

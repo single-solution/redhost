@@ -1,7 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
+import Link from "next/link";
 import React from "react";
 
 export default function TermsAndConditions() {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			&lt;&gt;
@@ -12,7 +23,7 @@ export default function TermsAndConditions() {
 						<nav>
 							<ol className="breadcrumb">
 								<li className="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li className="breadcrumb-item active">About Us</li>
 							</ol>
@@ -52,7 +63,7 @@ export default function TermsAndConditions() {
 									datele de login si password primite pe e-mail de la noi in formularul de logare.
 									<br />
 									<br />
-									<a href="utilizare-cpanel.php">Utilizarea cPanel pentru administrarea contului de gazduire</a>
+									<Link href="/utilizare-cpanel">Utilizarea cPanel pentru administrarea contului de gazduire</Link>
 									<h2>IV. Incarcarea site-ului</h2>
 									Pentru incarcarea site-ului pe serverul nostru puteti folosi orice client FTP impreuna cu urmatoarele
 									date:
@@ -82,9 +93,9 @@ export default function TermsAndConditions() {
 									</span>
 									<br />
 									<br />
-									<a href="incarcare-site-ftp.php">
+									<Link href="/incarcare-site-ftp">
 										Tutorial detaliat pentru incarcarea site-ului cu ajutorul FileZilla
-									</a>
+									</Link>
 									<br />
 									<h2>V. E-mail</h2>
 									Pentru crearea de conturi de mail pe site-ul dvs sunt necesari 2 pasi. Primul pas consta in crearea
@@ -104,26 +115,26 @@ export default function TermsAndConditions() {
 									<br />
 									<a href="https://www.redhost.ro/configurare-MacBook.php">Tutorial configurare mail pe MacBook</a>
 									<br />
-									<a href="configurare-windows-live-mail.php">Tutorial configurare client mail Windows Live Mail</a>
+									<Link href="/configurare-windows-live-mail">Tutorial configurare client mail Windows Live Mail</Link>
 									<br />
-									<a href="configurare-outlook-2013.php">Tutorial configurare client mail Outlook 2013</a>
+									<Link href="/configurare-outlook-2013">Tutorial configurare client mail Outlook 2013</Link>
 									<br />
-									<a href="configurare-thunderbird.php">Tutorial configurare client mail Thunderbird</a>
+									<Link href="/configurare-thunderbird">Tutorial configurare client mail Thunderbird</Link>
 									<br />
-									<a href="configurare-incredimail.php">Tutorial configurare client mail IncrediMail</a>
+									<Link href="/configurare-incredimail">Tutorial configurare client mail IncrediMail</Link>
 									<br />
-									<a href="configurare-android-4.1.2.php">Tutorial configurare telefon cu Android 4.1.2 Jelly Bean</a>
+									<Link href="/configurare-android-4.1.2">Tutorial configurare telefon cu Android 4.1.2 Jelly Bean</Link>
 									<br />
-									<a href="configurare-android-senseui.php">
+									<Link href="/configurare-android-senseui">
 										Tutorial configurare telefon cu Android 4.1.2 Jelly Bean cu SenseUI (HTC)
-									</a>
+									</Link>
 									<br />
-									<a href="configurare-android-4.4.php">Tutorial configurare telefon cu Android 4.4.2 KitKat</a>
+									<Link href="/configurare-android-4.4">Tutorial configurare telefon cu Android 4.4.2 KitKat</Link>
 									<br />
-									<a href="configurare-windows-8-phone.php">Tutorial configurare telefon cu Windows 8.1</a>
+									<Link href="/configurare-windows-8-phone">Tutorial configurare telefon cu Windows 8.1</Link>
 									<br />
-									<a href="configurare-iOS7-iPad.php">Tutorial configurare device cu iOS7 (tutorial pentru iPad)</a>
-									<a href="configurare-client-mail.php">Tutorial configurare client mail Outlook Express</a>
+									<Link href="/configurare-iOS7-iPad">Tutorial configurare device cu iOS7 (tutorial pentru iPad)</Link>
+									<Link href="/configurare-client-mail">Tutorial configurare client mail Outlook Express</Link>
 									<br />
 									<h3>Mailing: limite</h3>
 									Toate mailurile trimise de pe serverele noastre trebuie sa NU fie trimise in mod nesolicitat (SPAM). Va

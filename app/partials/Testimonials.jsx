@@ -1,9 +1,19 @@
-"use client";
+/* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
 
 import React, { useState } from "react";
 
 function Testimonials() {
 	const [currentActiveSlide, setCurrentActiveSlide] = useState(1);
+
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
 
 	return (
 		<section className="hm2-feedback pt-120 pb-120 overflow-hidden">

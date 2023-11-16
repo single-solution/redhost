@@ -1,6 +1,18 @@
+/* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
+import Link from "next/link";
 import React from "react";
 
 export default function Hosting() {
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			<section class="breadcrumb-area bg-primary-gradient">
@@ -10,7 +22,7 @@ export default function Hosting() {
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li class="breadcrumb-item active">Domain Reservation</li>
 							</ol>
@@ -211,9 +223,9 @@ export default function Hosting() {
 								</div>
 							</div>
 							<div class="submit-btn text-start mt-4">
-								<a href="./checkout.php" class="template-btn primary-btn border-0 rounded-pill">
+								<Link href="/checkout" class="template-btn primary-btn border-0 rounded-pill">
 									Continuare comanda: ultimul pas<i class="fa-solid fa-chevron-right ms-2"></i>
-								</a>
+								</Link>
 							</div>
 						</form>
 					</div>

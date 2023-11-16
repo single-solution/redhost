@@ -1,4 +1,7 @@
-"use client";
+/* eslint-disable react/no-unescaped-entities */
+("use client");
+import AOS from "aos";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function PricingPlans() {
@@ -8,6 +11,14 @@ export default function PricingPlans() {
 	const [isFeature3Expanded, setIsFeature3Expanded] = useState(false);
 	const [isFeature4Expanded, setIsFeature4Expanded] = useState(false);
 	const [isFeature5Expanded, setIsFeature5Expanded] = useState(false);
+
+	useEffect(() => {
+		AOS.init({
+			easing: "ease-in-out",
+			duration: 800,
+			once: true,
+		});
+	}, []);
 
 	return (
 		<section className="pricing-tab-section minimal-hero pt-0 bg-white position-relative zindex-1 overflow-hidden pricing-details-page">
@@ -173,9 +184,9 @@ export default function PricingPlans() {
 								<i className="fa-solid fa-angle-down"></i>Expand Feature
 							</button>
 
-							<a href="./search-domain.php" className="template-btn primary-btn w-100 mt-40 text-center">
+							<Link href="/domain-reservation" className="template-btn primary-btn w-100 mt-40 text-center">
 								Purchase Plan
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className="col-md-4 col-lg-2 equal-width-columns" data-aos="fade-up">
@@ -335,9 +346,9 @@ export default function PricingPlans() {
 							<button className="expand-btn mt-4 active" onClick={() => setIsFeature2Expanded((prevState) => !prevState)}>
 								<i className="fa-solid fa-angle-up"></i>Expand Feature
 							</button>
-							<a href="./search-domain.php" className="template-btn primary-btn w-100 mt-40 text-center">
+							<Link href="/domain-reservation" className="template-btn primary-btn w-100 mt-40 text-center">
 								Purchase Plan
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className="col-md-4 col-lg-2 equal-width-columns" data-aos="fade-up">
@@ -497,9 +508,9 @@ export default function PricingPlans() {
 							<button className="expand-btn mt-4 active" onClick={() => setIsFeature3Expanded((prevState) => !prevState)}>
 								<i className="fa-solid fa-angle-up"></i>Expand Feature
 							</button>
-							<a href="./search-domain.php" className="template-btn primary-btn w-100 mt-40 text-center">
+							<Link href="/domain-reservation" className="template-btn primary-btn w-100 mt-40 text-center">
 								Purchase Plan
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className="col-md-4 col-lg-2 equal-width-columns" data-aos="fade-up">
@@ -659,9 +670,9 @@ export default function PricingPlans() {
 							<button className="expand-btn mt-4 active" onClick={() => setIsFeature4Expanded((prevState) => !prevState)}>
 								<i className="fa-solid fa-angle-up"></i>Expand Feature
 							</button>
-							<a href="./search-domain.php" className="template-btn primary-btn w-100 mt-40 text-center">
+							<Link href="/domain-reservation" className="template-btn primary-btn w-100 mt-40 text-center">
 								Purchase Plan
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className="col-md-4 col-lg-2 equal-width-columns" data-aos="fade-up">
@@ -828,9 +839,9 @@ export default function PricingPlans() {
 							<button className="expand-btn mt-4 active" onClick={() => setIsFeature5Expanded((prevState) => !prevState)}>
 								<i className="fa-solid fa-angle-up"></i>Expand Feature
 							</button>
-							<a href="./search-domain.php" className="template-btn primary-btn w-100 mt-40 text-center">
+							<Link href="/domain-reservation" className="template-btn primary-btn w-100 mt-40 text-center">
 								Purchase Plan
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>

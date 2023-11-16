@@ -5,6 +5,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import Testimonials from "../partials/Testimonials";
 import PricingPlans from "../partials/PricingPlans";
+import Link from "next/link";
 
 export default function GazduireWebSSD() {
 	useEffect(() => {
@@ -24,7 +25,7 @@ export default function GazduireWebSSD() {
 						<nav>
 							<ol className="breadcrumb">
 								<li className="breadcrumb-item">
-									<a href="index.php">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li className="breadcrumb-item active"> Gazduire Web SSD</li>
 							</ol>
@@ -776,7 +777,7 @@ export default function GazduireWebSSD() {
 										<div className="vps-ft-item-content mt-30">
 											<h5 className="fs-4 pb-20">Locatie servere </h5>
 											<p>
-												RedHost ofera <a href="gazduire-ro.php">gazduire RO </a> in GTS Telecom (DataCenter
+												RedHost ofera <Link href="/gazduire-web-ssd">gazduire RO </Link> in GTS Telecom (DataCenter
 												profesional din Bucuresti).
 											</p>
 										</div>
