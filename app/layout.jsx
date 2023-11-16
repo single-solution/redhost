@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
 			</body>
 
 			<Script defer src="assets/js/vendors/jquery.min.js" />
-			<Script defer src="assets/js/app.js" />
+			{/* <Script defer src="assets/js/app.js" /> */}
 			<Script defer src="assets/js/vendors/popper.min.js" />
 			<Script defer src="assets/js/vendors/bootstrap.min.js" />
 			<Script defer src="assets/js/vendors/easing.min.js" />
