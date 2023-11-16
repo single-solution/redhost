@@ -37,9 +37,9 @@ export default function GazduireWebSSD() {
 			<PricingPlans />
 			<section className="hm2-service-section pt-80 pb-80 overflow-hidden position-relative zindex-1 bg-white ">
 				<img
-					src="assets/img/home2/shape/service-left-circle.svg"
+					src="/assets/img/home2/shape/service-left-circle.svg"
 					alt="circle"
-					className="position-absolute left-top opacity-75"
+					className="hiding-overlaps position-absolute left-top opacity-75"
 				/>
 				<div className="container">
 					<div className="row align-items-center">
@@ -63,7 +63,7 @@ export default function GazduireWebSSD() {
 												type="button"
 												aria-selected="true"
 												role="tab">
-												Servere &amp; Uptime
+												Servere & Uptime
 											</button>
 										</li>
 										<li>
@@ -74,7 +74,7 @@ export default function GazduireWebSSD() {
 												aria-selected="false"
 												role="tab"
 												className=""
-												tabIndex={-1}>
+												tabIndex="-1">
 												Alegere domeniu
 											</button>
 										</li>
@@ -86,7 +86,7 @@ export default function GazduireWebSSD() {
 												aria-selected="false"
 												role="tab"
 												className=""
-												tabIndex={-1}>
+												tabIndex="-1">
 												Cum comand?
 											</button>
 										</li>
@@ -98,7 +98,7 @@ export default function GazduireWebSSD() {
 												aria-selected="false"
 												role="tab"
 												className=""
-												tabIndex={-1}>
+												tabIndex="-1">
 												Cum platesc?
 											</button>
 										</li>
@@ -110,7 +110,7 @@ export default function GazduireWebSSD() {
 												aria-selected="false"
 												role="tab"
 												className=""
-												tabIndex={-1}>
+												tabIndex="-1">
 												Cat dureaza?
 											</button>
 										</li>
@@ -121,128 +121,148 @@ export default function GazduireWebSSD() {
 												Servere si Uptime
 											</h3>
 											<div className="tab-content-main py-3 ms-5">
-												<h4 className="my-4">Servere hosting Romania</h4>
+												<h4
+													style={{
+														background: "linear-gradient(95.45deg, #b11523 35.64%, #E71F31 98.23%)",
+														color: "#fff",
+														padding: "20px 10px",
+														borderRadius: "10px",
+													}}
+													className="my-4">
+													{" "}
+													Servere hosting Romania{" "}
+												</h4>
 												<ul className="border-0">
 													<li>
-														{" "}
 														<strong>Datacenter: </strong> GTS Telecom (centru de date profesional)
 													</li>
 													<li>
 														<strong>Servere:</strong> Dell / HP / SuperMicro
 													</li>
 													<li>
-														<strong> Procesoare:</strong> 2 x Intel Xeon E5-2680 (14 nuclee, 35MB cache)
+														<strong> Procesoare:</strong> 2 x Intel Xeon E5-2680 (14 nuclee, 35MB cache){" "}
 													</li>
 													<li>
 														<strong> Memorie: </strong>128GB RAM ECC DDR4
 													</li>
 													<li>
 														<strong> HDD: </strong>Matrice Raid H/W Dell Perc H730+, SSD-uri profesionale
-														(DataCenter edition) Intel si Samsung
+														(DataCenter edition) Intel si Samsung{" "}
 													</li>
 													<li>
 														<strong>Sisteme de operare: </strong> CentOS 7 (64 biti)
 													</li>
 													<li>
 														<strong>Control Panel:</strong> cPanel, LiteSpeed, JetBackup, Imunify360, Installatron,
-														Softaculous
+														Softaculous{" "}
 													</li>
 													<li>
-														<strong>Versiuni:</strong> Apache 2, PHP 5.3 - 8, MariaDB 10.3 / MySQL 5.7
+														<strong>Versiuni:</strong> Apache 2, PHP 5.3 - 8, MariaDB 10.3 / MySQL 5.7{" "}
 													</li>
 												</ul>
-												<h4 className="my-4">Uptime gazduire web</h4>
-												<p>
-													Pentru a verifica cu ajutorul acestui binecunoscut serviciu de monitorizare, uptime-ul
-													serverelor noastre de gazduire web va rugam sa accesati (verificare la fiecare 5 minute){" "}
-													<a href="http://www.siteuptime.com/stat.php?UserId=93607">
-														http://www.siteuptime.com/stat.php?UserId=93607
-													</a>
-												</p>
-												<a href="http://www.siteuptime.com/stat.php?UserId=93607">
-													<h4 className="my-4">Anunturi lucrari intretinere</h4>
-													<p>Nu este planificata nicio lucrare de intretinere la acest moment.</p>
-												</a>
-											</div>
-											<a href="http://www.siteuptime.com/stat.php?UserId=93607"></a>
-										</div>
-										<a href="http://www.siteuptime.com/stat.php?UserId=93607">
-											<div className="tab-pane fade " id="hosting_service0" role="tabpane">
-												<div className="tab-content-main py-3 ms-5">
-													<h3 className="mt-2">Cum aleg un domeniu?</h3>
-													<ul className="border-0" style={{ listStyle: "disc" }}>
-														<li>
-															domeniul trebuie sa reprezinte domeniul dvs, produsele, serviciile sau informatiile
-															pe care doriti sa le prezentati. Domeniul poate fi si numele firmei/institutiei dvs
-														</li>
-														<li>Limitati-va la cel mai scurt si mai usor de retinut domeniu posibil.</li>
-													</ul>
-													<h4 className="my-4">Atentie:</h4>
-													<ul className="border-0" style={{ listStyle: "disc" }}>
-														<li> domeniul nu poate contine spatii, puncte sau liniute de subliniere</li>
-														<li>
-															{" "}
-															domeniul poate avea maxim 63 de caractere (desi in nici un caz nu ar trebui sa va
-															apropiati vreodata de o asemenea dimensiune).
-														</li>
-													</ul>
-													<ul className="border-0" style={{ listStyle: "disc" }}>
-														<li>
-															Daca atragerea de vizitatori prin motoare de cautare este importanta incercati sa
-															introduceti in cadrul domeniului unul sau doua cuvinte cheie (asa cum ar fi ele
-															cautate pe Google).
-														</li>
-														<li>
-															Daca nu va puteti hotara intre 2 variante care se scriu si se citesc similar probabil
-															ar trebui sa le luati pe amandoua ca eventualii vizitatori sa nu ajunga din greseala
-															pe alt site.
-														</li>
-													</ul>
-													<h4 className="my-4">Verificarea disponibilitatii</h4>
+												<div>
+													<h4
+														style={{
+															background: "linear-gradient(95.45deg, #b11523 35.64%, #E71F31 98.23%)",
+															color: "#fff",
+															padding: "20px 10px",
+															borderRadius: "10px",
+														}}
+														className="my-4">
+														Uptime gazduire web{" "}
+													</h4>
 													<p>
-														Dupa ce v-ati hotarat asupra unui pachet de gazduire, dati click pe linkul "Comanda"
-														corespunzator acelui pachet. Urmatorul pas va fi sa verificati care din domeniile dorite
-														sunt disponibile.
-													</p>
-													<h4 className="my-4">Anunturi lucrari intretinere</h4>
-													<p>Nu este planificata nicio lucrare de intretinere la acest moment.</p>
-													<p className="my-3">
-														<strong>
-															DUPA CE ATI GASIT UN DOMENIU BUN COMANDATI-L IMEDIAT. POATE FI LUAT IN ORICE CLIPA DE
-															CATRE ALTCINEVA.
-														</strong>
+														Pentru a verifica cu ajutorul acestui binecunoscut serviciu de monitorizare, uptime-ul
+														serverelor noastre de gazduire web va rugam sa accesati (verificare la fiecare 5 minute){" "}
+														<a href="http://www.siteuptime.com/stat.php?UserId=93607" />{" "}
+														http://www.siteuptime.com/stat.php?UserId=93607{" "}
 													</p>
 												</div>
+												<h4
+													style={{
+														background: "linear-gradient(95.45deg, #b11523 35.64%, #E71F31 98.23%)",
+														color: "#fff",
+														padding: "20px 10px",
+														borderRadius: "10px",
+													}}
+													className="my-4">
+													Anunturi lucrari intretinere{" "}
+												</h4>
+												<p>Nu este planificata nicio lucrare de intretinere la acest moment. </p>
 											</div>
-										</a>
+										</div>
+										<div className="tab-pane fade " id="hosting_service0" role="tabpane">
+											<div className="tab-content-main py-3 ms-5">
+												<h3 className="mt-2">Cum aleg un domeniu?</h3>
+												<ul className="border-0" style={{ listStyle: "disc" }}>
+													<li>
+														domeniul trebuie sa reprezinte domeniul dvs, produsele, serviciile sau informatiile pe
+														care doriti sa le prezentati. Domeniul poate fi si numele firmei/institutiei dvs{" "}
+													</li>
+													<li>Limitati-va la cel mai scurt si mai usor de retinut domeniu posibil.</li>
+												</ul>
+												<h4 className="my-4"> Atentie: </h4>
+												<ul className="border-0" style={{ listStyle: "disc" }}>
+													<li> domeniul nu poate contine spatii, puncte sau liniute de subliniere</li>
+													<li>
+														{" "}
+														domeniul poate avea maxim 63 de caractere (desi in nici un caz nu ar trebui sa va
+														apropiati vreodata de o asemenea dimensiune).{" "}
+													</li>
+												</ul>
+												<ul className="border-0" style={{ listStyle: "disc" }}>
+													<li>
+														Daca atragerea de vizitatori prin motoare de cautare este importanta incercati sa
+														introduceti in cadrul domeniului unul sau doua cuvinte cheie (asa cum ar fi ele cautate
+														pe Google).{" "}
+													</li>
+													<li>
+														Daca nu va puteti hotara intre 2 variante care se scriu si se citesc similar probabil ar
+														trebui sa le luati pe amandoua ca eventualii vizitatori sa nu ajunga din greseala pe alt
+														site.{" "}
+													</li>
+												</ul>
+												<h4 className="my-4">Verificarea disponibilitatii </h4>
+												<p>
+													Dupa ce v-ati hotarat asupra unui pachet de gazduire, dati click pe linkul "Comanda"
+													corespunzator acelui pachet. Urmatorul pas va fi sa verificati care din domeniile dorite
+													sunt disponibile.{" "}
+												</p>
+												<h4 className="my-4">Anunturi lucrari intretinere </h4>
+												<p>Nu este planificata nicio lucrare de intretinere la acest moment. </p>
+												<p className="my-3">
+													<strong>
+														DUPA CE ATI GASIT UN DOMENIU BUN COMANDATI-L IMEDIAT. POATE FI LUAT IN ORICE CLIPA DE
+														CATRE ALTCINEVA.{" "}
+													</strong>
+												</p>
+											</div>
+										</div>
 										<div className="tab-pane fade " id="hosting_service1" role="tabpanel">
-											<a href="http://www.siteuptime.com/stat.php?UserId=93607"></a>
 											<ul style={{ border: "none", listStyle: "disc" }}>
-												<a href="http://www.siteuptime.com/stat.php?UserId=93607"></a>
 												<li>
-													<a href="http://www.siteuptime.com/stat.php?UserId=93607">Alegeti un </a>
-													<a href="#"> pachet de gazduire</a>.
+													Alegeti un <a href="#"> pachet de gazduire</a>.
 												</li>
 												<li>Cautati un nume de domeniu (adresa web) disponibil.</li>
 												<li>Completati datele dumneavoastra.</li>
 												<li>
 													La pasul urmator vi se va afisa o proforma. Proforma va fi trimisa automat si pe mail insa
 													va rugam sa verificati si in Bulk/Spam daca aveti e-mail pe Yahoo sau alti provideri
-													gratuiti.
+													gratuiti.{" "}
 												</li>
 												<li>
 													Dupa afisarea proformei, efectuati plata prin una din{" "}
-													<a href="mod-plata.php">metodele de plata</a> specificate.
+													<Link href="/mod-plata">metodele de plata</Link> specificate.
 												</li>
 												<li>
 													La intrarea banilor in contul nostru vom inregistra domeniul si vom crea contul de gazduire
 													in cel mai scurt timp. Domeniile se propaga in mod normal in cateva ore insa in unele
-													retele aceasta operatiune poate dura si cateva zile.
+													retele aceasta operatiune poate dura si cateva zile.{" "}
 												</li>
 												<li>Imediat dupa aceasta operatiune vi se trimit datele de logare pe e-mail.</li>
 												<li>
 													Ulterior va trimitem prin factura si un contract in 2 exemplare din care va rugam sa ne
-													inapoiati unul semnat (si stampilat in cazul firmelor) in termen de 7 zile de la primire.
+													inapoiati unul semnat (si stampilat in cazul firmelor) in termen de 7 zile de la primire.{" "}
 												</li>
 											</ul>
 										</div>
@@ -252,26 +272,25 @@ export default function GazduireWebSSD() {
 												Exemplu de completare a foii de depunere -{" "}
 												<span style={{ textDecoration: "underline" }}>dati click pe imagine pentru marire</span>
 											</h3>
-											<div className="text-center my-3">
-												<img src="./assets/images/depunere-mica-rh.gif" alt="" />
+											<div className="text-center my-3 mx-auto" style={{ maxWidth: "520px" }}>
+												<img className="w-100" src="./assets/images/depunere-mica-rh.gif" alt="" />
 											</div>
 											<h3 className="my-4">Daca reprezentati o SOCIETATE COMERCIALA</h3>
 											<ul className="border-0" style={{ listStyle: "disc" }}>
 												<li>
 													prin Ordin de Plata (OP) in contul bancar deschis in GarantiBank Galati specificat pe
-													proforma
+													proforma{" "}
 												</li>
 												<li>
 													prin depunere numerar in contul de pe factura proforma la oricare filiala BRD (vedeti
-													exemplul de foaie de depunere de la baza paginii). Lista completa a filialelor:
-													<br />
+													exemplul de foaie de depunere de la baza paginii). Lista completa a filialelor: <br />
 													<a href="http://www.brd.ro/banca/retea-unitati/">http://www.brd.ro/banca/retea-unitati/</a>
 												</li>
 												<p className="my-2">
 													Faceti click pe judetul dvs si vi se va prezenta o lista cu unitatile disponibile (cate 10
 													pe o pagina - verificati daca nu sunt mai multe pagini). Pentru orice depunere de numerar
 													in contul nostru aveti nevoie de numele firmei noastre, contul, banca, numarul proforma
-													(pentru "Detalii operatiune") si CNP-ul dvs.
+													(pentru "Detalii operatiune") si CNP-ul dvs.{" "}
 												</p>
 												<li>prin card</li>
 												<p className="my-2">
@@ -279,33 +298,34 @@ export default function GazduireWebSSD() {
 													prezent pe proformele afisate online (proformele pe care le primiti in mail nu contin
 													butonul de plata cu cardul). Link-ul pentru afisarea proformei online il gasiti deasupra
 													proformei in cazul mailurilor sau la baza proformei in cazul mailurilor de tip text. Nu
-													exista un comision de procesare card!
+													exista un comision de procesare card!{" "}
 												</p>
 											</ul>
-											<h3 className="my-4">Daca sunteti o PERSOANA FIZICA</h3>
+											<h3 className="my-4">Daca sunteti o PERSOANA FIZICA </h3>
 											<ul className="border-0" style={{ listStyle: "disc" }}>
 												<li>
 													Puteti plati cu numerar la oricare filiala BRD (vedeti exemplul de foaie de depunere de la
-													baza paginii). Lista completa a filialelor:
+													baza paginii). Lista completa a filialelor:{" "}
 												</li>
 												<br />
-												<a href="http://www.brd.ro/banca/retea-unitati/">http://www.brd.ro/banca/retea-unitati/</a>
+												<li>
+													<a href="http://www.brd.ro/banca/retea-unitati/">http://www.brd.ro/banca/retea-unitati/</a>
+												</li>
 												<p className="my-2">
 													(faceti click pe judetul dvs si vi se va prezenta o lista cu filiale din zona - cate 10 pe
 													o pagina; verificati daca nu sunt mai multe pagini). Pentru orice depunere de numerar in
 													contul nostru aveti nevoie de numele firmei noastre, contul, banca, numarul proforma
-													(pentru "Detalii operatiune") si CNP-ul dvs.
+													(pentru "Detalii operatiune") si CNP-ul dvs.{" "}
 												</p>
 												<li>
-													{" "}
 													<strong>prin Ordin de Plata (OP)</strong> in contul bancar deschis in GarantiBank Galati
-													specificat in proforma (daca aveti cont deschis intr-o banca comerciala)
+													specificat in proforma (daca aveti cont deschis intr-o banca comerciala){" "}
 												</li>
 												<p className="my-2">
 													Pentru a efectua plata prin card va trebui sa faceti click pe butonul "Plata prin card"
 													prezent pe proformele afisate online (proformele pe care le primiti in mail nu contin
 													butonul de plata cu cardul). Link-ul pentru afisarea proformei online il gasiti deasupra
-													proformei in cazul mailurilor sau la baza proformei in cazul mailurilor de tip text.
+													proformei in cazul mailurilor sau la baza proformei in cazul mailurilor de tip text.{" "}
 												</p>
 												<p>
 													<strong>Nu exista un comision de procesare card!</strong>
@@ -313,7 +333,7 @@ export default function GazduireWebSSD() {
 												<li>
 													Nu se accepta plata prin mandat postal datorita modului disfunctional in care opereaza
 													aceasta institutie (banii sunt transmisi fara niciun fel de informatii legate de plata
-													si/sau platitor ceea ce cauzeaza grave disfunctionalitati).
+													si/sau platitor ceea ce cauzeaza grave disfunctionalitati).{" "}
 												</li>
 											</ul>
 											<h3 className="my-4 text-uppercase">Daca sunteti o INSTITUTIE BUGETARA</h3>
@@ -323,46 +343,46 @@ export default function GazduireWebSSD() {
 												<strong>
 													Este important sa notificati realizarea platii cat mai curand dupa efectuarea ei
 												</strong>{" "}
-												.
+												.{" "}
 											</p>
 											<p className="my-3">
 												<strong>
 													Puteti achizitiona serviciile noastre si prin intermediul Sistemului Electronic de
-													Achizitii Publice (SICAP / SEAP).
+													Achizitii Publice (SICAP / SEAP).{" "}
 												</strong>
 											</p>
 										</div>
 										<div className="tab-pane fade " id="hosting_service3" role="tabpanel">
 											<div className="tab-content-main py-3 ms-5">
 												<h3 className="mt-2">Cat dureaza activarea serviciilor?</h3>
-												<h4 className="my-3">Plasarea comenzii</h4>
+												<h4 className="my-3"> Plasarea comenzii </h4>
 												<p>
 													Dupa plasarea comenzii vi se va prezenta la ultimul pas proforma aferenta pe care o puteti
 													plati pe loc cu cardul sau ulterior prin depunere numerar la orice agentie BRD sau prin
-													Ordin de Plata din orice alta banca.
+													Ordin de Plata din orice alta banca.{" "}
 												</p>
-												<h4 className="my-3">Operarea comenzii</h4>
+												<h4 className="my-3"> Operarea comenzii </h4>
 												<p>
 													Dupa intrarea banilor in contul nostru (aceasta etapa dureaza maxim cateva ore lucratoare
 													in cazul platilor prin card sau din BRD si pana la 1-2 zile lucratoare in cazul platilor
 													din alte banci), in circa 15-30 minute va vom opera comanda (cu cateva exceptii; spre
-													exemplu, nu se opereaza comenzi in afara programului normal de lucru).
+													exemplu, nu se opereaza comenzi in afara programului normal de lucru).{" "}
 												</p>
-												<h4 className="my-3">Propagare</h4>
+												<h4 className="my-3"> Propagare </h4>
 												<p>
 													De la momentul in care se inregistreaza sau se muta pe alt server un domeniu pana la
 													momentul in care aceasta modificare devine activa se scurge un interval de timp numit
-													perioada de propagare:
+													perioada de propagare:{" "}
 												</p>
 												<ul className="border-0" style={{ listStyle: "disc" }}>
 													<li>
 														{" "}
 														in cazul in care ati comandat un domeniu international acesta va deveni disponibil
-														imediat dupa operare sau in maxim cateva ore;
+														imediat dupa operare sau in maxim cateva ore;{" "}
 													</li>
 													<li>
 														{" "}
-														in cazul in care ati comandat un domeniu .ro se va propaga in mod uzual in cateva ore.
+														in cazul in care ati comandat un domeniu .ro se va propaga in mod uzual in cateva ore.{" "}
 													</li>
 												</ul>
 											</div>
@@ -373,7 +393,11 @@ export default function GazduireWebSSD() {
 						</div>
 					</div>
 				</div>
-				<img src="assets/img/home2/shape/service-right-bottom.svg" alt="wave" className="position-absolute right-bottom" />
+				<img
+					src="/assets/img/home2/shape/service-right-bottom.svg"
+					alt="wave"
+					className="position-absolute right-bottom hiding-overlaps"
+				/>
 			</section>
 
 			<Testimonials />

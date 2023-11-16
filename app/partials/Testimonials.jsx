@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-("use client");
+"use client";
 import AOS from "aos";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Testimonials() {
 	const [currentActiveSlide, setCurrentActiveSlide] = useState(1);

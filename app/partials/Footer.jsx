@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-("use client");
+"use client";
 import AOS from "aos";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Footer = () => {
 	useEffect(() => {

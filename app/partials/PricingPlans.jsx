@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-("use client");
+"use client";
 import AOS from "aos";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function PricingPlans() {
 	const [isCurrentPlanMonthly, setIsCurrentPlanMonthly] = useState(false);
